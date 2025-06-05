@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderlust Adventures | Discover Your Next Journey</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-compass"></i>
+                <h1>Wander<span>lust</span></h1>
+            </a>
+            
+            <div class="mobile-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="tours.html">Tours</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="nav-btns">
+                <a href="login.html" class="btn">Sign In</a>
+                <a href="register.html" class="btn btn-secondary">Register</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Homepage Content -->
+    <div id="home-page">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container hero-content">
+                <h1>Discover the World's Most Amazing Destinations</h1>
+                <p>Experience unforgettable journeys tailored to your dreams. Explore, discover, and create memories that last a lifetime.</p>
+                <a href="tours.html" class="btn btn-secondary">Explore Tours</a>
+                
+                <div class="search-form">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="destination">Destination</label>
+                            <select id="destination">
+                                <option value="">Any Destination</option>
+                                <option value="bali">Bali, Indonesia</option>
+                                <option value="paris">Paris, France</option>
+                                <option value="kyoto">Kyoto, Japan</option>
+                                <option value="santorini">Santorini, Greece</option>
+                                <option value="maldives">Maldives</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="activity">Activity</label>
+                            <select id="activity">
+                                <option value="">Any Activity</option>
+                                <option value="beach">Beach Vacation</option>
+                                <option value="hiking">Hiking & Trekking</option>
+                                <option value="culture">Cultural Experience</option>
+                                <option value="wildlife">Wildlife Safari</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="date">Travel Date</label>
+                            <input type="date" id="date">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="duration">Duration</label>
+                            <select id="duration">
+                                <option value="">Any Duration</option>
+                                <option value="3-5">3-5 Days</option>
+                                <option value="6-8">6-8 Days</option>
+                                <option value="9-12">9-12 Days</option>
+                                <option value="13+">13+ Days</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <button class="btn search-btn">Search Tours</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tour Packages -->
+        <section id="packages" style="background: #f8f9fa;">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Tour Packages</h2>
+                    <p>Carefully crafted experiences that combine comfort, adventure, and cultural immersion</p>
+                </div>
+                
+                <div class="packages-container">
+                    <div class="package-filters">
+                        <button class="filter-btn active">All Tours</button>
+                        <button class="filter-btn">Adventure</button>
+                        <button class="filter-btn">Beach</button>
+                        <button class="filter-btn">Cultural</button>
+                        <button class="filter-btn">Wildlife</button>
+                        <button class="filter-btn">Honeymoon</button>
+                    </div>
+                    
+                    <div class="packages-grid">
+                        <div class="package-card">
+                            <div class="package-img">
+                                <img src="https://images.unsplash.com/photo-1551632436-7a879920dd3f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Bali Adventure">
+                            </div>
+                            <div class="package-details">
+                                <h3>Bali Ultimate Adventure</h3>
+                                <div class="package-meta">
+                                    <span><i class="fas fa-clock"></i> 7 Days</span>
+                                    <span><i class="fas fa-user-friends"></i> 12 People</span>
+                                    <span><i class="fas fa-map-marker-alt"></i> Bali</span>
+                                </div>
+                                <p>Experience Bali's volcanoes, waterfalls, and cultural treasures in this action-packed tour.</p>
+                                <div class="package-price">$1,199</div>
+                                <a href="#" class="btn">Book Now</a>
+                            </div>
+                        </div>
+                        
+                        <div class="package-card">
+                            <div class="package-img">
+                                <img src="https://images.unsplash.com/photo-1534008897995-27a23e859048?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Santorini">
+                            </div>
+                            <div class="package-details">
+                                <h3>Santorini Dream Escape</h3>
+                                <div class="package-meta">
+                                    <span><i class="fas fa-clock"></i> 5 Days</span>
+                                    <span><i class="fas fa-user-friends"></i> 8 People</span>
+                                    <span><i class="fas fa-map-marker-alt"></i> Greece</span>
+                                </div>
+                                <p>Luxurious stay in iconic white-washed houses with stunning caldera views.</p>
+                                <div class="package-price">$1,899</div>
+                                <a href="#" class="btn">Book Now</a>
+                            </div>
+                        </div>
+                        
+                        <div class="package-card">
+                            <div class="package-img">
+                                <img src="https://images.unsplash.com/photo-1590523278191-995cbcda646b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Safari">
+                            </div>
+                            <div class="package-details">
+                                <h3>Kenya Wildlife Safari</h3>
+                                <div class="package-meta">
+                                    <span><i class="fas fa-clock"></i> 10 Days</span>
+                                    <span><i class="fas fa-user-friends"></i> 6 People</span>
+                                    <span><i class="fas fa-map-marker-alt"></i> Kenya</span>
+                                </div>
+                                <p>Witness the great migration and Africa's iconic wildlife in their natural habitat.</p>
+                                <div class="package-price">$2,499</div>
+                                <a href="#" class="btn">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Booking Form -->
+        <section class="booking-section">
+            <div class="container booking-container">
+                <div class="booking-content">
+                    <h2>Ready for Your Next Adventure?</h2>
+                    <p>Book your dream vacation today and take advantage of our special early bird discounts. Our travel experts are ready to craft your perfect itinerary.</p>
+                    <div class="benefits">
+                        <p><i class="fas fa-check-circle"></i> Best Price Guarantee</p>
+                        <p><i class="fas fa-check-circle"></i> No Booking Fees</p>
+                        <p><i class="fas fa-check-circle"></i> 24/7 Customer Support</p>
+                    </div>
+                    <a href="tours.html" class="btn btn-secondary">View All Packages</a>
+                </div>
+                
+                <div class="booking-form">
+                    <h3>Book Your Tour</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="fullname">Full Name</label>
+                            <input type="text" id="fullname" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="tour">Select Tour</label>
+                            <select id="tour" required>
+                                <option value="">Choose a Tour</option>
+                                <option value="bali">Bali Ultimate Adventure</option>
+                                <option value="santorini">Santorini Dream Escape</option>
+                                <option value="kenya">Kenya Wildlife Safari</option>
+                                <option value="japan">Japanese Cultural Journey</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="travel-date">Travel Date</label>
+                            <input type="date" id="travel-date" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="travelers">Number of Travelers</label>
+                            <select id="travelers" required>
+                                <option value="">Select</option>
+                                <option value="1">1 Traveler</option>
+                                <option value="2">2 Travelers</option>
+                                <option value="3">3 Travelers</option>
+                                <option value="4">4 Travelers</option>
+                                <option value="5+">5+ Travelers</option>
+                            </select>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-accent" style="width: 100%;">Book Now</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery -->
+        <section id="gallery">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Travel Gallery</h2>
+                    <p>Get inspired by breathtaking moments captured from around the world</p>
+                </div>
+                
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Mountain">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1503220317375-aaad61436b1b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Desert">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Beach">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1488085061387-422e29b40080?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Waterfall">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1534008897995-27a23e859048?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Santorini">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1506929562872-bb421503ef21?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Ocean">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center" style="margin-top: 40px;">
+                    <a href="gallery.html" class="btn btn-outline">View Full Gallery</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="testimonials">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Traveler Stories</h2>
+                    <p>Hear from our happy travelers about their unforgettable experiences</p>
+                </div>
+                
+                <div class="testimonials-container">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>Our trip to Bali with Wanderlust was absolutely perfect! From the moment we arrived until we departed, every detail was taken care of. The guides were knowledgeable, the accommodations were stunning, and the experiences were unforgettable.</p>
+                            <div class="testimonial-author">
+                                <div class="author-img">
+                                    <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Sarah Johnson">
+                                </div>
+                                <div class="author-info">
+                                    <h4>Sarah Johnson</h4>
+                                    <p>Bali Adventure Tour</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>The Kenya safari exceeded all our expectations. We saw the Big Five within the first two days! The lodges were luxurious, the food was excellent, and our guide's expertise made all the difference. We'll definitely travel with Wanderlust again.</p>
+                            <div class="testimonial-author">
+                                <div class="author-img">
+                                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Chen">
+                                </div>
+                                <div class="author-info">
+                                    <h4>Michael Chen</h4>
+                                    <p>Kenya Wildlife Safari</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section class="newsletter">
+            <div class="container">
+                <h2>Subscribe to Our Newsletter</h2>
+                <p>Get exclusive travel deals, insider tips, and inspiring stories delivered straight to your inbox</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </div>
+    
+
+        
+       
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Wanderlust Adventures</h3>
+                    <p>Creating unforgettable travel experiences since 2010. We specialize in crafting personalized journeys that connect you with the world's most incredible destinations.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="tours.html">Tours</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Destination</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Asia</a></li>
+                        <li><a href="#">Europe</a></li>
+                        <li><a href="#">Africa</a></li>
+                        <li><a href="#">North America</a></li>
+                        <li><a href="#">South America</a></li>
+                        <li><a href="#">Australia & Oceania</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Travel Street, Adventure City, AC 12345</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>info@wanderlustadventures.com</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>Mon-Fri: 9am - 6pm | Sat: 10am - 4pm</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Wanderlust Adventures. All rights reserved. | Designed with ❤️ for Travel Enthusiasts</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./src/script.js"></script>
+</body>
+</html>
